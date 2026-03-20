@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="654.0" style="-fx-background-color: linear-gradient(to bottom right, #9D9101, #CDBE70); -fx-border-color: rgba(0,0,0,0.1); -fx-border-width: 2;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cursach.controllers.HelloController">
+
+   <children>
+      <ImageView fitHeight="431.0" fitWidth="346.0" layoutX="154.0" layoutY="3.0" opacity="0.89" pickOnBounds="true" preserveRatio="true">
+         <clip>
+            <Rectangle arcHeight="40.0" arcWidth="40.0" height="428.0" width="397.0" />
+         </clip>
+         <image>
+            <Image url="@image/1dc796ae7e6fe29b66d57e4609953737.jpg" />
+         </image>
+      </ImageView>
+
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#ffffffa6" height="285.0" layoutX="216.0" layoutY="104.0" stroke="#d2b48c" strokeType="INSIDE" width="222.0" />
+
+      <Text fx:id="nnn" fill="WHITE" layoutX="130.0" layoutY="49.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 5, 0, 0, 1);" text="Вітаю у віртуальній галереї художників" textAlignment="CENTER" wrappingWidth="393.0">
+         <font>
+            <Font name="Garamond Bold" size="33.0" />
+         </font>
+      </Text>
+
+      <Text fill="#793d3d" layoutX="227.0" layoutY="147.0" text="Авторизуйтесь" textAlignment="CENTER" wrappingWidth="200.0">
+         <font>
+            <Font name="Garamond Bold" size="24.0" />
+         </font>
+      </Text>
+
+      <TextField fx:id="login" layoutX="249.0" layoutY="175.0" prefHeight="30.0" prefWidth="155.0" promptText="Логін" style="-fx-background-color: #FAF0E6; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #d2b48c; -fx-focus-color: transparent; -fx-faint-focus-color: transparent;">
+         <font>
+            <Font name="Garamond Bold" size="13.0" />
+         </font>
+      </TextField>
+
+      <StackPane layoutX="249.0" layoutY="214.0" prefHeight="30.0" prefWidth="155.0">
+         <children>
+            <PasswordField fx:id="passwordField" prefHeight="30.0" prefWidth="155.0" promptText="Пароль"
+                           style="-fx-background-color: #FAF0E6; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #d2b48c; -fx-focus-color: transparent; -fx-faint-focus-color: transparent;">
+               <font>
+                  <Font name="Garamond Bold" size="13.0" />
+               </font>
+            </PasswordField>
+
+            <TextField fx:id="passwordVisible" managed="false" visible="false" prefHeight="30.0" prefWidth="155.0" promptText="Пароль"
+                       style="-fx-background-color: #FFE4C4; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #d2b48c; -fx-focus-color: transparent; -fx-faint-focus-color: transparent;">
+               <font>
+                  <Font name="Garamond Bold" size="13.0" />
+               </font>
+            </TextField>
+         </children>
+      </StackPane>
+
+      <Button fx:id="togglePasswordButton" layoutX="367.0" layoutY="207.0" prefHeight="43.0" prefWidth="38.0" style="-fx-background-color: transparent; -fx-cursor: hand; -fx-font-size: 16px; -fx-focus-color: transparent; -fx-faint-focus-color: transparent;" text="👁" textFill="#793d3d" />
+
+      <Button fx:id="log_in" layoutX="287.0" layoutY="261.0" mnemonicParsing="false" prefWidth="80.0" style="-fx-background-color: #FFBD88; -fx-text-fill: #793d3d; -fx-font-weight: bold; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #d2b48c; -fx-border-width: 2; -fx-cursor: hand; -fx-focus-color: transparent; -fx-faint-focus-color: transparent;" text="Увійти">
+         <font>
+            <Font name="Garamond Bold" size="14.0" />
+         </font>
+      </Button>
+
+      <Text fill="#793d3d" layoutX="281.0" layoutY="314.0" text="Немає акаунту?">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+
+      <Button fx:id="registration_button" layoutX="257.0" layoutY="326.0" prefHeight="32.0" prefWidth="140.0" style="-fx-background-color: #FFBD88; -fx-text-fill: #793d3d; -fx-font-weight: bold; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #d2b48c; -fx-border-width: 2; -fx-cursor: hand; -fx-focus-color: transparent; -fx-faint-focus-color: transparent;" text="Зареєструватись">
+         <font>
+            <Font name="Garamond Bold" size="14.0" />
+         </font>
+      </Button>
+
+   </children>
+</AnchorPane>

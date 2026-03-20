@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="420.0" style="-fx-background-color: linear-gradient(to bottom right, #9D9101, #CDBE70); -fx-border-width: 2; -fx-border-color: rgba(0,0,0,0.1);" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cursach.controllers.AddPaintingController">
+    <children>
+        <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#ffffff26" height="440.0" layoutX="15.0" layoutY="20.0" stroke="TRANSPARENT" width="390.0" />
+
+        <Button fx:id="backButton" layoutX="25.0" layoutY="30.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #793d3d; -fx-text-fill: #FFBD88; -fx-background-radius: 50; -fx-cursor: hand;" text="←" />
+
+        <Label layoutX="40.0" layoutY="80.0" text="Назва картини:" textFill="#793d3d">
+            <font>
+                <Font name="Garamond Bold" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="titleField" layoutX="40.0" layoutY="105.0" prefHeight="35.0" prefWidth="340.0" promptText="Введіть назву картини..." style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-background-color: #FAF0E6; -fx-border-color: #d2b48c; -fx-border-width: 1.5;">
+         <font>
+            <Font name="Garamond Bold" size="12.0" />
+         </font></TextField>
+
+        <Label layoutX="40.0" layoutY="155.0" text="Опис картини:" textFill="#793d3d">
+            <font>
+                <Font name="Garamond Bold" size="16.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="descriptionArea" layoutX="40.0" layoutY="180.0" prefHeight="80.0" prefWidth="340.0" promptText="Введіть опис картини..." style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-control-inner-background: #FAF0E6; -fx-border-color: #d2b48c; -fx-border-width: 1.5; -fx-font-family: 'Garamond'; -fx-font-size: 14;" wrapText="true">
+         <font>
+            <Font name="Garamond Bold" size="12.0" />
+         </font></TextArea>
+
+        <StackPane layoutX="40.0" layoutY="275.0" prefHeight="130.0" prefWidth="180.0">
+            <children>
+                <ImageView fx:id="paintingImageView" fitHeight="120.0" fitWidth="170.0" pickOnBounds="true">
+                    <clip>
+                        <Rectangle arcHeight="25.0" arcWidth="25.0" height="120.0" width="170.0" />
+                    </clip>
+                </ImageView>
+                <Rectangle arcHeight="25.0" arcWidth="25.0" fill="TRANSPARENT" height="125.0" mouseTransparent="true" stroke="#d2b48c" strokeWidth="3.0" width="175.0" />
+            </children>
+        </StackPane>
+
+        <Button fx:id="chooseImageButton" layoutX="230.0" layoutY="325.0" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #FFBD88; -fx-text-fill: #793d3d; -fx-font-weight: bold; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #d2b48c; -fx-border-width: 2; -fx-cursor: hand;" text="Обрати фото..." />
+
+        <Button fx:id="saveButton" layoutX="142.0" layoutY="414.0" prefHeight="18.0" prefWidth="136.0" style="-fx-background-color: #793d3d; -fx-text-fill: #FFBD88; -fx-font-weight: bold; -fx-font-size: 15px; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #d2b48c; -fx-border-width: 2; -fx-cursor: hand;" text="Зберегти" />
+    </children>
+</AnchorPane>

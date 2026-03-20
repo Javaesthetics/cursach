@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="720.0" style="-fx-background-color: linear-gradient(to bottom right, #9D9101, #CDBE70); -fx-border-color: rgba(0,0,0,0.1); -fx-border-width: 2;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cursach.controllers.PaintingsController">
+
+    <children>
+        <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#ffffff26" height="460.0" layoutX="15.0" layoutY="20.0" stroke="TRANSPARENT" width="690.0" />
+
+        <HBox alignment="CENTER_LEFT" layoutX="35.0" layoutY="35.0" prefWidth="650.0" spacing="15.0">
+            <children>
+                <HBox spacing="10.0">
+                    <children>
+                        <Button fx:id="backButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #793d3d; -fx-text-fill: #FFBD88; -fx-background-radius: 50; -fx-cursor: hand; -fx-font-weight: bold;" text="←" />
+                        <Button fx:id="forwardButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #793d3d; -fx-text-fill: #FFBD88; -fx-background-radius: 50; -fx-cursor: hand; -fx-font-weight: bold;" text="→" />
+                    </children>
+                </HBox>
+
+                <Text style="-fx-fill: #793d3d; -fx-font-weight: bold;" text="Галерея картин">
+                    <font>
+                        <Font name="Garamond Bold" size="27.0" />
+                    </font>
+                </Text>
+
+                <Region HBox.hgrow="ALWAYS" />
+
+                <Button fx:id="profileButton" mnemonicParsing="false" prefHeight="35.0" style="-fx-background-color: #FFBD88; -fx-text-fill: #793d3d; -fx-font-weight: bold; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #793d3d; -fx-border-width: 1; -fx-cursor: hand; -fx-padding: 0 20;" text="Мій профіль" />
+            </children>
+        </HBox>
+
+        <ListView fx:id="paintingList" layoutX="35.0" layoutY="100.0" prefHeight="300.0" prefWidth="260.0" style="-fx-background-color: #FAF0E6; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #d2b48c; -fx-border-width: 2; -fx-font-size: 15px;" />
+
+        <StackPane layoutX="345.0" layoutY="100.0" onMouseClicked="#handleImageClick" prefHeight="200.0" prefWidth="340.0" style="-fx-cursor: hand;">
+            <children>
+                <ImageView fx:id="paintingImage" fitHeight="200.0" fitWidth="330.0" pickOnBounds="true">
+                    <clip>
+                        <Rectangle arcHeight="40.0" arcWidth="40.0" height="200.0" width="330.0" />
+                    </clip>
+                </ImageView>
+                <Rectangle arcHeight="40.0" arcWidth="40.0" fill="TRANSPARENT" height="204.0" mouseTransparent="true" stroke="#d2b48c" strokeWidth="5.0" width="336.0" />
+            </children>
+        </StackPane>
+
+        <TextArea fx:id="paintingDescription" editable="false" layoutX="345.0" layoutY="320.0" prefHeight="81.0" prefWidth="340.0" style="-fx-control-inner-background: #FAF0E6; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #d2b48c; -fx-border-width: 1.5; -fx-font-family: 'Garamond'; -fx-font-size: 15px;" wrapText="true" />
+
+        <HBox alignment="CENTER_LEFT" layoutX="35.0" layoutY="410.0" prefWidth="650.0" spacing="15.0">
+            <children>
+                <Button fx:id="addButton" prefHeight="35.0" style="-fx-background-color: #FFBD88; -fx-text-fill: #793d3d; -fx-font-weight: bold; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #d2b48c; -fx-border-width: 2; -fx-padding: 0 15; -fx-cursor: hand;" text="Додати картину">
+               <font>
+                  <Font name="Garamond Bold" size="12.0" />
+               </font></Button>
+                <Button fx:id="editButton" prefHeight="35.0" style="-fx-background-color: #FFBD88; -fx-text-fill: #793d3d; -fx-font-weight: bold; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #d2b48c; -fx-border-width: 2; -fx-padding: 0 15; -fx-cursor: hand;" text="Редагувати">
+               <font>
+                  <Font name="Garamond Bold" size="12.0" />
+               </font></Button>
+                <Button fx:id="deleteButton" prefHeight="35.0" style="-fx-background-color: #793d3d; -fx-text-fill: #FFBD88; -fx-font-weight: bold; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #d2b48c; -fx-border-width: 2; -fx-padding: 0 15; -fx-cursor: hand;" text="Видалити">
+               <font>
+                  <Font name="Garamond Bold" size="12.0" />
+               </font></Button>
+
+                <Region HBox.hgrow="ALWAYS" />
+
+                <Button fx:id="vidguku" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #FFBD88; -fx-text-fill: #793d3d; -fx-font-weight: bold; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #d2b48c; -fx-border-width: 2; -fx-cursor: hand;" text="Відгуки">
+               <font>
+                  <Font name="Garamond Bold" size="12.0" />
+               </font></Button>
+            </children>
+        </HBox>
+
+    </children>
+</AnchorPane>

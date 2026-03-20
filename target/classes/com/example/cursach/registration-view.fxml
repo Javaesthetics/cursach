@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="469.0" prefWidth="584.0" style="-fx-background-color: linear-gradient(to bottom right, #9D9101, #CDBE70); -fx-border-color: rgba(0,0,0,0.1); -fx-border-width: 2;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cursach.controllers.RegistrationController">
+
+    <ImageView fitHeight="537.0" fitWidth="406.0" layoutX="130.0" layoutY="-4.0" opacity="0.89" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@image/1dc796ae7e6fe29b66d57e4609953737.jpg" />
+        </image>
+        <clip>
+            <Rectangle height="500" width="333" />
+        </clip>
+    </ImageView>
+
+    <Text fill="WHITE" layoutX="138.0" layoutY="60.0" text="Реєстрація користувача" textAlignment="CENTER" wrappingWidth="320.34765625">
+        <font>
+            <Font name="Garamond Bold" size="29.0" />
+        </font>
+    </Text>
+
+    <ImageView fx:id="avatarImage" fitHeight="80.0" fitWidth="80.0" layoutX="170.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 0);">
+        <image>
+        </image>
+    </ImageView>
+
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#FFFFFF80" height="80.0" layoutX="170.0" layoutY="80.0" stroke="#d2b48c" strokeType="INSIDE" strokeWidth="2.0" width="80.0" />
+
+    <Button fx:id="chooseAvatarButton" layoutX="270.0" layoutY="105.0" style="-fx-background-color: #FFBD88; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #d2b48c; -fx-cursor: hand;" text="Обрати фото" textFill="#793d3d">
+        <font>
+            <Font name="Garamond Bold" size="13.0" />
+        </font>
+    </Button>
+
+    <TextField fx:id="loginField" layoutX="190.0" layoutY="190.0" prefWidth="200.0" promptText="Введіть логін" style="-fx-background-color: #FAF0E6; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #d2b48c;">
+        <font>
+            <Font name="Garamond Bold" size="13.0" />
+        </font>
+    </TextField>
+
+    <TextField fx:id="emailField" layoutX="190.0" layoutY="230.0" prefWidth="200.0" promptText="Введіть Email" style="-fx-background-color: #FAF0E6; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #d2b48c;">
+        <font>
+            <Font name="Garamond Bold" size="13.0" />
+        </font>
+    </TextField>
+
+    <PasswordField fx:id="passwordField" layoutX="190.0" layoutY="270.0" prefWidth="200.0" promptText="Введіть пароль" style="-fx-background-color: #FAF0E6; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #d2b48c;">
+        <font>
+            <Font name="Garamond Bold" size="13.0" />
+        </font>
+    </PasswordField>
+
+    <PasswordField fx:id="confirmPasswordField" layoutX="190.0" layoutY="310.0" prefWidth="200.0" promptText="Підтвердіть пароль" style="-fx-background-color: #FAF0E6; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #d2b48c;">
+        <font>
+            <Font name="Garamond Bold" size="13.0" />
+        </font>
+    </PasswordField>
+
+    <Button fx:id="registerButton" layoutX="220.0" layoutY="370.0" prefWidth="140.0" style="-fx-background-color: #FFBD88; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #d2b48c; -fx-cursor: hand;" text="Зареєструватися" textFill="#793d3d">
+        <font>
+            <Font name="Garamond Bold" size="14.0" />
+        </font>
+    </Button>
+
+</AnchorPane>
